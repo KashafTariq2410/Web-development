@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{margin: 0px;
+    padding: 0%;}
+    ul{ list-style-type: none;
+        background: black;
+        color: white;}
+        ul li{
+            display: inline-block;
+            padding: 10px;
+        }
+        ul li:hover{display: inline-block;
+        padding: 10px;
+        color: beige;
+        background-color: green;}
+        .dropdown{ display: none;}   
+          .dropdown1{ display: none;}
+       ul li:hover .dropdown{ display: block;
+    position: absolute; margin-left: -10px;
+    margin-top: 10px; 
+        }
+     .dropdown   ul li:hover .dropdown1{ display: block;
+    position: absolute; margin-left: 140px;
+    margin-top: -28px; 
+        }
+        .dropdown ul{margin: 0px; padding: 0px;}
+        .dropdown1 ul{margin: 0px; padding: 0px;}
+        
+        .dropdown ul li{display: block;}
+        .dropdown1 ul li{display: block;}
+</style>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Courses
+            <div class="dropdown">
+                <ul>
+                    <li>Spoken</li>
+                    <li>Computer software
+                        <div class="dropdown1">
+                            <ul>
+                              <li>DCA</li>
+                              <li>ADCA</li>
+                              <li>DTP</li>
+                              <li>Programming</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Computer Hardware</li>
+                    <li>Coaching</li>
+                </ul>
+
+            </div>
+        </li>
+        <li>Contact us</li>
+    </ul>
+</body>
+</html>

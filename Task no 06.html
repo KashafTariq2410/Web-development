@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK NO 06</title>
+</head>
+<style>
+    body{margin: 0%; padding: 0%;  background-color: aqua;}
+    ul{list-style-type: none; color: white; background-color: black;}
+    ul li{display: inline-block; padding: 10px;}
+    ul li:hover{ background: white; color: black;}
+    .dropdown {display: none;}
+   ul li:hover .dropdown{ display: block; position: absolute; margin-left: -10px; margin-top: 10px;}
+   .dropdown ul{margin: 0%; padding: 0px;}
+   .dropdown ul li{display: block; }
+   .dropdown1{display: none;}
+    .dropdown2{display: none;}
+   .dropdown ul li:hover .dropdown1{ display: block; position: absolute; margin-left: 80px; margin-top: -28px;}
+   .dropdown1 ul li:hover .dropdown2{ display: block; position: absolute; margin-left: 88px; margin-top: -28px;}
+</style>
+<body> 
+    <ul>
+        <li>Home</li> <li></li>
+        <li>WordPress</li><li></li>
+        <li>Web Design +
+          <div class="dropdown">
+            <ul>
+                <li>Resource</li>
+                <li>Links</li>
+                <li>Tutorials +
+                    <div class="dropdown1">
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>JQuery</li>
+                            <li>Outher +
+                                <div class="dropdown2">
+                                    <ul>
+                                        <li>Stuff</li>
+                                        <li>Things</li>
+                                        <li>Outher Stuff</li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+          </div>
+        </li><li></li>
+        <li>Insipiration</li><li></li>
+        <li>Contact</li><li></li>
+        <li>About</li>
+    </ul>
+</body>
+</html>
