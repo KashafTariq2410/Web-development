@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Task no 10</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        background-color: black;
+        width: 100%;
+        height: 110vh;
+
+    }
+    .div1 ul{ 
+        list-style-type: none; 
+       padding: 20px;
+    }
+    .div1{
+        background-color: rgb(37, 37, 37);
+        color: whitesmoke;
+        width: 70%;
+        margin: 0% auto;
+        padding-left: 60px;
+    }
+    .div1 ul li{
+        display: inline-block;
+        padding: 10px;
+    }
+    #img1{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        float: right;
+        margin-right: 300px;
+        margin-top: 100px;
+    }
+    .div2{
+        margin-left: 200px;
+        margin-top: 100px;
+        padding: 50px;
+        height: 200px;
+        width: 400px;
+        color: white;
+    }
+    .div2 p{
+        color: grey;
+    }
+    .div2 button{
+        padding: 15px;
+        width: 200px;
+        color: white;
+        background-color: rgb(112, 178, 55) ;
+        border: 2px;
+        border-radius: 5px;
+    }
+    h5{
+        color: white;
+    }
+    .div3{
+        margin-left: 200px;
+        padding: 50px;
+    }
+    .div3 button{
+        padding: 20px;
+        margin-left: 15px ;
+        width: 150px;
+        font-weight: 800;
+        color: gray;
+        background-color: black;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+    section{
+        padding:50px 100px 50px 100px;
+    }
+    #h11{
+        text-align: center;
+        font-weight: 800;
+        font-size: xx-large;
+    }
+    section #p1{
+        text-indent: 30px;
+        word-spacing: 5px;
+        line-height: 25px;
+        text-align: center;
+        color: gray;
+    }
+    section #p2{
+        text-indent: 15px;
+        word-spacing: 5px;
+        line-height: 2px;
+        text-align: center;
+        color: gray;
+    }
+    .div4{
+        width: 90%;
+        height: 300px;
+        padding: 30px;
+        display: flex;
+        gap: 70px;
+    }
+    .div5{
+        width: 400px;
+        padding: 30px;
+        margin-left: 50px;
+        height: 250px;
+    }
+    .div6{
+        height: 250px;
+        width: 450px;
+    }
+    #but1{
+        background-color:bisque;
+        color: orange;
+         border: 2px solid bisque;
+         border-radius: 10px;
+         margin-left: 70px;
+         margin-top: 20px;
+    }
+    #h12{ margin-left: 70px; }
+    #img2{
+        border-radius: 10px;
+    }
+    #p3{
+        margin-left: 70px;
+        color: gray;
+    }
+    #but2{
+        margin-left: 70px;
+        padding: 10px;
+        width: 150px;
+        color: white;
+        background-color: orangered;
+        border: none;
+        border-radius: 5px;
+    }
+    .div7{
+        width: 90%;
+        height: 300px;
+        padding: 30px;
+        display: flex;
+        gap: 70px;
+    }
+    #img3{
+        border-radius: 10px;
+        margin-left: 110px;
+    }
+    #but3{
+        background-color:lightsteelblue;
+        color: darkblue;
+         border: 2px solid lightsteelblue;
+         border-radius: 10px;
+         /* margin-left: 70px; */
+         margin-top: 20px;
+    }
+    #p4{
+        color: gray;
+        line-height: 30px;
+    }
+    #but4{
+        padding: 10px;
+        width: 150px;
+        color: white;
+        background-color: darkblue;
+        border: none;
+        border-radius: 5px;
+    }
+    .div8{
+        width: 90%;
+        height: 300px;
+        padding: 30px;
+        display: flex;
+        gap: 70px;
+    }
+    #but5{
+        background-color:lightcyan;
+        color: #01BE73;
+         border: 2px solid lightcyan;
+         border-radius: 10px;
+         margin-left: 70px;
+         margin-top: 20px;
+    }
+    #but6{
+        margin-left: 70px;
+        padding: 10px;
+        width: 150px;
+        color: white;
+        background-color: #01BE73;
+        border: none;
+        border-radius: 5px;
+    }
+    .div12{
+        width: 400px;
+        padding: 30px;
+        margin-left: 50px;
+        height: 250px;
+    }
+    .sec1{
+        background-color: black;
+        padding:50px 100px 50px 100px;
+        color: white;
+    }
+    #div9{
+        width: 50%;
+        margin: 0% auto;
+    }
+    #h13{
+        text-align: center;
+    }
+    #p5{
+        text-align: center;
+        line-height: 25px;
+        color: grey;
+    }
+    .div11{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        margin-left: 70px;
+        position: relative;
+    }
+    .div10{
+        height: 200px;
+        width: 400px;
+        border: 1px solid gray;
+        border-right: none;
+        padding: 20px;
+        border-radius: 10px;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+    .p6{
+        line-height: 30px;
+        color: gray;
+    }
+    .img4{
+        border-radius: 50%;
+    }
+    .span1{
+        padding: 30px;
+        height: 50px;
+        position: absolute;
+    }
+    .img5{
+        position: absolute;
+        top: -15px;
+        height: 30px;
+        width: 30px;
+    }
+    .div13{
+        width: 50%;
+        margin: 0% auto;
+    }
+    #h14{
+        text-align: center;
+    }
+    #p7{
+        text-align: center;
+        line-height: 25px;
+
+    }
+    .div14{
+        margin-left: 80px;
+        position: relative;
+    }
+    #img6{
+        border-radius: 10px;
+        margin-left: 50px;
+    }
+    #but7{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 230px;
+        left: -30px;
+        background-color: transparent;
+        border: 1px solid darkslategray;
+        color: darkslategray;
+    }
+    #but8{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 230px;
+        right: -10px;
+        background-color: transparent;
+        border: 1px solid darkslategray;
+        color: darkslategray;
+    }
+    .div15{
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+    }
+    .span2{
+        width: 450px;
+        margin-left: 50px;
+        height: 200px;
+    }
+    .p8{
+        line-height: 25px;
+        color: gray;
+    }
+    .but9{
+        padding: 15px;
+        width: 150px;
+        color: white;
+        background-color: rgb(95, 180, 21) ;
+        border: 2px;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+    footer{
+        background-color: black;
+        /* text-align: center; */
+        color: white;
+        padding: 75px;
+    }
+    #div16{
+        text-align: center;
+    }
+    form{
+        width: 30%;
+        margin: 0% auto;
+    }
+   textarea, input{
+        padding: 12px;
+        width: 300px;
+        border-radius: 5px;
+        border: none;
+    }
+    textarea{
+       height: 100px;
+    }
+    #but10{
+        width: 325px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid rgb(95, 180, 21);
+        background-color: rgb(95, 180, 21);
+        color: white;
+    }
+    #end{
+        width: 100%;
+        background-color: rgb(37, 37, 37);
+        color: grey;
+        position: absolute;
+       text-align: center;
+       height: 70px;
+    }
+    #end p b{
+        color: rgb(221, 22, 22);
+    }
+</style>
+<body>
+     <header>
+        <div class="div1">
+            <ul>
+                <li>Home</li>
+                <li></li>
+                <li>Case Studies</li>
+                <li></li>
+                <li>Testimonials</li>
+                <li></li>
+                <li>Recent work</li>
+                <li></li>
+                <li>Get in touch</li>
+                <li></li>
+                <li></li>
+                <li></li> <li></li>
+                <li><i class="fa-brands fa-linkedin"></i></li> 
+                <li><i class="fa-brands fa-behance"></i></li> 
+                <li><i class="fa-brands fa-twitter"></i></li>  
+            </ul>
+        </div>
+        <img id="img1" src="./ben-parker-OhKElOkQ3RE-unsplash.jpg" alt="">
+        <div class="div2">
+            <h1>Your Name Here</h1>
+            <p>Intro text : Lorem ipsum, dolor sit amet,  consectetur of the adipisicing elit sed do euismod tempor incidedent ut 
+                labore rate dolore magna alique.
+            </p>
+            <button>Let's get started > </button>
+        </div>
+        <div class="div3">
+            <h5>Worked with</h5>
+            <button>ClickUp</button>
+            <button>Dropbox</button>
+            <button>PAYCHEX</button>
+            <button>elastic</button>
+            <button>Stripe</button>
+        </div>
+        
+     </header>
+
+     <section>
+        <h1 id="h11">Case Studies</h1>
+        <p id="p1">Solving user & business problems since last 15+ years. <br>
+        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+         <p id="p2"> euismod tempor incidedent ut labour at dolore magna alique. </p>
+         <div class="div4">
+            <div class="div5">
+               <button id="but1">Fintech</button>
+                <h1 id="h12">Work name here</h1>
+               <p id="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Officia, sed est! Debitis dolor ipsam eius minus maiores? 
+                 et dolor quas suscipit, possimus sint culpa facilis?</p>
+                 <br>
+                 <button id="but2">View case study ></button>
+            </div>
+             <div class="div6"> <img id="img2" src="./ux-book-keyboard-pen.jpg" alt="" height="300px" width="450px"> </div> 
+         </div>
+
+         <div class="div7">
+            <div> <img id="img3" src="./images.jpeg" alt="" height="300px" width="450px"> </div> 
+
+            <div>
+                <button id="but3">EdTech</button>
+                 <h1>Work name here</h1>
+                <p id="p4">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit.
+                  Officia, sed est! Debitis dolor ipsam eius minus maiores? 
+                  et dolor quas suscipit, possimus sint culpa facilis?</p>
+                  <br>
+                  <button id="but4">View case study ></button>
+             </div>
+        </div>
+
+        <div class="div8">
+            <div class="div12">
+                <button id="but5">Pharma</button>
+                 <h1 id="h12">Work name here</h1>
+                <p id="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officia, sed est! Debitis dolor ipsam eius minus maiores? 
+                  et dolor quas suscipit, possimus sint culpa facilis?</p>
+                  <br>
+                  <button id="but6">View case study ></button>
+             </div>
+          <div class="div6"> <img id="img2" src="./picture.jpg" alt="" height="300px" width="450px"> </div> 
+
+        </div>
+     </section>
+
+
+     <section class="sec1">
+         <div id="div9">
+            <h1 id="h13">Testimonials</h1>
+            <p id="p5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Consequatur iusto cumque tempora.
+            </p>
+         </div>
+
+         <br>
+
+         <div class="div11">
+
+         <div class="div10">
+            <img class="img5" src="./icon.png" alt="">
+            <p class="p6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eveniet nostrum dolores nemo dignissimos tempora 
+                quod laboriosam ipsum,
+                
+            </p>
+            <img  class="img4" src="./images (1).jpeg" alt="" height="80px" width="80px">
+            <span class="span1">
+                <b>Client Name</b>
+              </span>  
+         </div>
+         <div class="div10">
+            <img class="img5" src="./icon.png" alt="">
+            <p class="p6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eveniet nostrum dolores nemo dignissimos tempora 
+                quod laboriosam ipsum,
+                
+            </p>
+            <img class="img4" src="./images (2).jpeg" alt="" height="80px" width="80px">
+            <span class="span1">
+                <b>Client Name</b>
+              </span>  
+        </div>
+
+         </div>
+                <br> <br>
+         <div class="div11">
+        
+            <div class="div10">
+                <img class="img5" src="./icon.png" alt="" >
+                <p class="p6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eveniet nostrum dolores nemo dignissimos tempora 
+                    quod laboriosam ipsum,
+                    
+                </p>
+                <img class="img4" src="./close-head.jpg" alt="" height="80px" width="80px">
+              <span class="span1">
+                <b>Client Name</b>
+              </span>  
+             </div>
+
+             <div class="div10">
+                <img class="img5" src="./icon.png" alt="" >
+                <p class="p6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eveniet nostrum dolores nemo dignissimos tempora 
+                    quod laboriosam ipsum,
+                    
+                </p>
+                <img class="img4" src="./client.jpg" alt="" height="80px" width="80px">
+                <span class="span1">
+                    <b>Client Name</b>
+                  </span>  
+             </div>
+
+         </div>
+     </section>
+    
+     <section class="sec2">
+        <div class="div13">
+            <h1 id="h14">Recent Work</h1>
+            <p id="p7">Solving user & business problems since last 15+ years.
+                 <br>Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <br> <br>
+        <div class="div14">
+            <button id="but7"> < </button>
+            <img id="img6" src="./images (3).jpeg" alt="" height="300px" width="450px">
+        
+            <img  id="img6" src="./monitors-675x360.jpg" alt="" height="300px" width="450px">
+            <button id="but8"> > </button>
+        </div>
+          <br>
+        <div class="div15">
+           <span class="span2">
+            <h1>Work Name Here</h1>
+            <p class="p8">Labore et dolore magna aliqua. sed do eiusmod <br> tempor incididunt ut labore et dolore magna.</p>
+            <button class="but9">Know more ></button>
+           </span>
+
+           <span class="span2">
+            <h1>Work Name Here</h1>
+            <p class="p8">Rempor incididunt ut labore et dolore magna aliqua. <br> sed do eiusmod tempor incididunt u.</p>
+            <button class="but9">Know more ></button>
+           </span>
+        </div>
+
+     </section>
+     
+     <footer>
+        <div id="div16">
+            <h1>Get In Touch</h1>
+            <p id="p5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Consequatur <br> iusto cumque tempora.
+              incididunt ut labour et dolor magna aliqua.
+          </p>
+        </div>
+        <form>
+            <Label class="lab">Email</Label> <br>
+            <input type="text" placeholder="Please enter your email"> <br> <br>
+            <label  class="lab">Mobile</label> <br>
+            <input type="number" placeholder="Enter mobile" > <br> <br>
+            <label  class="lab">Message</label> <br>
+            <textarea placeholder="Enter your message"></textarea>  <br> <br>
+            <button id="but10">Submit ></button>
+        </form>
+     </footer>
+
+     <div id="end">
+        <p>Made with <b>❤</b></p>
+ </div>
+</body>
+</html>
