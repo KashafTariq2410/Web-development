@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Grade Manager</title>
+  <style>
+    .low-grade {
+      background-color: #f8d7da; /* light red */
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Student Grade Manager</h2>
+
+  <input type="text" id="studentName" placeholder="Enter Name" />
+  <input type="number" id="studentMarks" placeholder="Enter Marks" />
+  <button onclick="addStudent()">Add Student</button>
+
+  <h3>Student List</h3>
+  <table id="studentTable">
+    <tr>
+      <th>Name</th>
+      <th>Marks</th>
+      <th>Action</th>
+    </tr>
+  </table>
+
+  <h3 id="averageDisplay">Average: 0</h3>
+
+  <script src="script.js"></script>
+</body>
+</html>
